@@ -1,9 +1,10 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
-import DataTable from "react-data-table-component";
 import { Link } from "react-router-dom";
+import './Table.css';
 
-const Table = () => {
+
+const Table = (props) => {
     const [users, setUsers] = useState([]);
 
     const fetchUsers = async () => {
@@ -22,24 +23,36 @@ const Table = () => {
     }, []);
 
     return (
-        <div>
-           {/* <h1>hi</h1>  */}
+        <>
+          <div className="table-header">
+                <h2 className="medication">Medication</h2>
+                <h2 className="dosage">Dosage</h2>
+                <h2 className="uses">Uses</h2>
+                <h2 className="time">Time</h2>
+            </div>
            {users.map((user) => {
                console.log(users)
                return (
-               <div>
-                   {user.prescriptions.map((medication, i) => (
-                   <h1>{medication.medication}</h1>  
+               <div className="table-group">
+                 
+                {user.prescriptions.map((medication, i) => (
+                    <div className="table-content">
+                        <h2>
+                        <input type="checkbox" />
+                        </h2>
+                        <h2>{medication.medication}</h2>  
+                        <h2>{medication.dosage}</h2>
+                        <h2>{medication.uses}</h2>
+                        <h2>{medication.time}</h2>
+                        <img src={medication.photo}/>
+                    </div>
                    ))}
-
-                <DataTable title="People" columns={medication.medication} data={data} />
-
-
                </div>
                )
             })}
-        </div>
+        </>
     )
+    
 }
 
 export default Table;

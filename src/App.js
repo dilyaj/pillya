@@ -19,7 +19,10 @@ function App() {
       <Route exact path='/' component={Login} />
       <Route path="/login" component={Login} />     
       <Route path="/signup" component={Form} />
-      <Route path="/dashboard" component={Dashboard} />     
+      <Route path="/dashboard" component={Dashboard} />   
+
+
+
      
 
       </div>

@@ -8,6 +8,7 @@ const LoginForm = ({ submitForm }) => {
     submitForm,
     validate
   );
+  
 
   return (
     <div className='form-content-right'>
@@ -40,7 +41,7 @@ const LoginForm = ({ submitForm }) => {
           {errors.password && <p>{errors.password}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
-          Sign in
+          <a href='/dashboard'>Sign in</a>
         </button>
         <span className='form-input-login'>
           Don't have an account? Sign up <a href='/signup'>here</a>

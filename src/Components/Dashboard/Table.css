@@ -1,0 +1,62 @@
+* {
+    justify-content: center;
+
+}
+
+.table-group {
+    display: flex;
+    text-align: center;
+    width: 1000px;
+    justify-content: space-between;
+}
+div.table-header {
+    border: 5px solid grey;
+    display: flex;
+    justify-content: center;
+}
+
+/* .medication {
+    padding-right: 26rem;
+
+}
+
+.dosage {
+    margin-right: 9rem;
+} */
+
+/* .time {
+    margin-right: 7rem;
+}
+
+.uses {
+    margin-right: 7rem;
+
+} */
+
+
+
+.table-content {
+    border: 5px solid grey;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.table-content > * {
+    border: 3px solid grey;
+    width: 25%;
+
+}
+
+.table-group {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 60%
+
+}
+
+img {
+    width: 100px;
+
+}
