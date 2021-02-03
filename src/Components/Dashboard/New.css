@@ -1,0 +1,9 @@
+.new-form {
+    margin-top: 100px;
+    margin-left: 200px;
+    padding:40px;
+    border: 5px solid grey;
+    border-radius: 10px;
+    width: 400px;
+
+}

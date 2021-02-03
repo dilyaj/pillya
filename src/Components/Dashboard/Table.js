@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
+import { Button } from "../Button";
 import './Table.css';
 
 
@@ -24,12 +25,13 @@ const Table = (props) => {
 
     return (
         <>
-          <div className="table-header">
+        <Button href="/new" className="add-new">Add a new medication</Button> 
+          {/* <div className="table-header">
                 <h2 className="medication">Medication</h2>
                 <h2 className="dosage">Dosage</h2>
                 <h2 className="uses">Uses</h2>
                 <h2 className="time">Time</h2>
-            </div>
+            </div> */}
            {users.map((user) => {
                console.log(users)
                return (

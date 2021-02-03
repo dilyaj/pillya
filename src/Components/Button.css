@@ -2,6 +2,13 @@
     --primary: #3acbf7;
 }
 
+.add-new {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    margin-left: 100px;
+
+}
+
 .btn {
     padding: 8px 20px;
     border-radius: 4px;
